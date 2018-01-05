@@ -1,1 +1,1 @@
-# git-bisecting-examples
+# git-bisect-examples
