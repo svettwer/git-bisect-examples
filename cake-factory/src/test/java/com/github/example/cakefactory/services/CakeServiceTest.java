@@ -18,7 +18,7 @@ public class CakeServiceTest {
     private CakeService cakeService;
 
     @Test
-    public void defaultCakeIsChocolate() {
+    public void defaultCakeIsVanilla() {
 
         //GIVEN
 
@@ -26,7 +26,7 @@ public class CakeServiceTest {
         Cake cake = cakeService.getCake();
 
         //THEN
-        assertEquals("chocolate", cake.getKind());
+        assertEquals("vanilla", cake.getKind());
     }
 
     @Test
