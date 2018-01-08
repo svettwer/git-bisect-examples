@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.example</groupId>
-	<artifactId>simple-bisect-example</artifactId>
+	<artifactId>cake-factory</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>simple-bisect-example</name>
-	<description>A project showing the basic concepts of git bisect</description>
+	<name>cake-factory</name>
+	<description>A sample spring boot web service containing some issues to find</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
