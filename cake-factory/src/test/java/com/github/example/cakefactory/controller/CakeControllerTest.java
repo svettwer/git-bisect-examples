@@ -39,4 +39,20 @@ public class CakeControllerTest {
         verify(cakeService).getCake();
         Assert.assertEquals(expectedCake, cake);
     }
+
+    @Test
+    public void getSpecificCake() {
+
+        //GIVEN
+        String orderedCake = "strawberry";
+        Cake expectedCake = mock(Cake.class);
+        when(cakeService.getCake(orderedCake)).thenReturn(expectedCake);
+
+        //WHEN
+        Cake cake = cakeController.getCake(orderedCake);
+
+        //THEN
+        verify(cakeService).getCake(orderedCake);
+        Assert.assertEquals(expectedCake, cake);
+    }
 }

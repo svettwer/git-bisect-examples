@@ -10,4 +10,8 @@ public class CakeService {
     public Cake getCake() {
         return new Cake("chocolate");
     }
+
+    public Cake getCake(String orderedCake) {
+        return null;
+    }
 }

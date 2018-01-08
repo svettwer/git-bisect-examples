@@ -19,4 +19,8 @@ public class CakeController {
     public Cake getCake(){
         return cakeService.getCake();
     }
+
+    public Cake getCake(String orderedCake) {
+        return null;
+    }
 }
