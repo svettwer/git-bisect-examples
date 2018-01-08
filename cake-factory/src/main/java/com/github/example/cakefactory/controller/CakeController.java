@@ -2,6 +2,7 @@ package com.github.example.cakefactory.controller;
 
 import com.github.example.cakefactory.dto.Cake;
 import com.github.example.cakefactory.services.CakeService;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +21,9 @@ public class CakeController {
         return cakeService.getCake();
     }
 
-    public Cake getCake(String orderedCake) {
-        return null;
+
+    @RequestMapping(method = RequestMethod.GET, value = "/{kind}")
+    public Cake getCake(@PathVariable String kind){
+        return cakeService.getCake(kind);
     }
 }
