@@ -1,4 +1,4 @@
-#Cake factory
+# Cake factory
 This repository contains a spring boot application realizing a very basic cake factory web service, which is currently
 broken to show the functionality of git bisect.
 
