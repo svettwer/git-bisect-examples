@@ -8,7 +8,7 @@ public class CakeService {
 
 
     public Cake getCake() {
-        return new Cake("chocolate");
+        return new Cake("vanilla");
     }
 
 
