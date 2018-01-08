@@ -28,4 +28,17 @@ public class CakeServiceTest {
         //THEN
         assertEquals("chocolate", cake.getKind());
     }
+
+    @Test
+    public void orderedCakeIsProduced() {
+
+        //GIVEN
+        String kindOfPie = "raspberry";
+
+        //WHEN
+        Cake cake = cakeService.getCake(kindOfPie);
+
+        //THEN
+        assertEquals("kindOfPie", cake.getKind());
+    }
 }
