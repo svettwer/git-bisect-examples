@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
@@ -35,6 +36,7 @@ public class CakeControllerTest {
         Cake cake = cakeController.getCake();
 
         //THEN
+        verify(cakeService).getCake();
         Assert.assertEquals(expectedCake, cake);
     }
 }
