@@ -18,7 +18,7 @@ public class CakeControllerIT extends JUnit4CitrusTestDesigner{
 
     @Test
     @CitrusTest
-    public void EnsureDefaultCakeIsChocolate(){
+    public void ensureDefaultCakeIsChocolate(){
 
         http()
                 .client(cakeFactoryClient)
@@ -30,7 +30,21 @@ public class CakeControllerIT extends JUnit4CitrusTestDesigner{
                 .response(HttpStatus.OK)
                 .messageType(MessageType.JSON)
                 .payload("{\"kind\": \"chocolate\"}");
+    }
 
+    @Test
+    @CitrusTest
+    public void ensureOrderedCakeIsDelivered(){
 
+        http()
+                .client(cakeFactoryClient)
+                .send()
+                .get("/cake/strawberry");
+        http()
+                .client(cakeFactoryClient)
+                .receive()
+                .response(HttpStatus.OK)
+                .messageType(MessageType.JSON)
+                .payload("{\"kind\": \"strawberry\"}");
     }
 }
