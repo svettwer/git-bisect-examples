@@ -39,6 +39,6 @@ public class CakeServiceTest {
         Cake cake = cakeService.getCake(kindOfPie);
 
         //THEN
-        assertEquals("kindOfPie", cake.getKind());
+        assertEquals(kindOfPie, cake.getKind());
     }
 }

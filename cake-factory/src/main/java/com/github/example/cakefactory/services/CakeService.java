@@ -11,7 +11,8 @@ public class CakeService {
         return new Cake("chocolate");
     }
 
-    public Cake getCake(String orderedCake) {
-        return null;
+
+    public Cake getCake(String kind) {
+        return new Cake(kind);
     }
 }
