@@ -3,7 +3,7 @@ This file contains a basic reference of how to perform a manual git-bisect analy
 software.
 
 For a more detailed explanation of the workflow and some tips and tricks, please visit the article related to this
-repository on [labs.consol.de](https://labs.consol.de/)
+repository on [labs.consol.de](https://labs.consol.de/development/git/2018/01/12/automated-debugging-with-git.html)
 
 ## Basic manual bisect reference
 * Executing `git bisect` commands is only possible if your are in the root folder of your git repository

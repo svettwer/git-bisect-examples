@@ -3,7 +3,7 @@ This file contains a basic reference of how to perform a automated git-bisect an
 software.
 
 For a more detailed explanation of the workflow and some tips and tricks, please visit the article related to this
-repository on [labs.consol.de](https://labs.consol.de/)
+repository on [labs.consol.de](https://labs.consol.de/development/git/2018/01/12/automated-debugging-with-git.html)
 
 ## Basic automated bisect reference
 * It's required to initialize the git bisect operation, before you're able to start the test script:
